@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.container {
+  width: 50%;
+  font-size: 14px;
+  padding: 2em;
+}
+
+.container__image {
+  width: 30%;
+  float: left;
+}
+
+.container__image img {
+  width: 50%;
+  float: left;
+  height: 10em;
+}
+
+.container__content {
+  width: 68%;
+  float: left;
+  padding-left: 2%;
+}
+
+.container__content .title a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.container__content .title a:hover {
+  color: #a23d3d;
+}
+
+.container .group {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+}
+
+.container .group .element1 {
+  color: #41455d;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.container .group .element2 {
+  color: #787878;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.container .spoil {
+  color: #4e4e4e;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 414px) {
+  .container {
+    font-size: 12px;
+    width: 100%;
+  }
+  .container__image {
+    width: 40%;
+  }
+  .container__content {
+    width: 50%;
+  }
+  .container .hidden {
+    display: none;
+  }
+}
+/*# sourceMappingURL=pic6.css.map */

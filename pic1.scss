@@ -1,0 +1,30 @@
+@import 'style.scss';
+.container {
+    width: 30%;
+    height: auto;
+    ul {
+        list-style-type: square;
+        list-style-image: url('/image/image1.jpg');
+        li {
+            padding-top: 1em;
+            a {
+                @include CSSFont(#064273,
+                1.2em,
+                400);
+                text-decoration: none;
+                &:hover {
+                    color: #ef628d;
+                }
+                &:active {
+                    color: aquamarine;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:414px) {
+    .container {
+        width: 90%;
+    }
+}

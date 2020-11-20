@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.container {
+  margin: 1em;
+  width: 60%;
+  height: 400px;
+}
+
+.container__image img {
+  float: left;
+  width: 33%;
+}
+
+.container__content {
+  float: left;
+  width: 67%;
+}
+
+.container__content .header {
+  padding-left: 1em;
+  padding-bottom: 0.8em;
+}
+
+.container__content .header a {
+  color: #333333;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.container__content .header a:hover {
+  color: #e21cf0;
+}
+
+.container__content .header a:active {
+  color: aquamarine;
+}
+
+.container__content .sport_hour {
+  padding-left: 1em;
+  padding-bottom: 0.8em;
+}
+
+.container__content .sport_hour .sport,
+.container__content .sport_hour .sub {
+  color: #41455d;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.container__content .sport_hour .hour {
+  color: #777777;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+.container__content .content {
+  padding-left: 1em;
+  padding-bottom: 0.8em;
+  color: #4d4d4d;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.container__content hr {
+  margin-left: 1em;
+  border: none;
+  border-bottom: dotted 0.5px;
+  height: 1px;
+  color: #777777;
+}
+
+.container__content .bonus {
+  padding-top: 0.5em;
+}
+
+.container__content .bonus a {
+  margin-left: 1em;
+  color: #9e9e9e;
+  font-size: 1em;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.container__content .list {
+  padding-top: 0.3em;
+  padding-left: 1em;
+}
+
+.container__content .list ul {
+  list-style-type: square;
+  color: #fc5f3d;
+}
+
+.container__content .list ul li {
+  padding-bottom: 1em;
+}
+
+.container__content .list ul li a {
+  color: #41455d;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.container__content .list ul li a:hover {
+  color: #e21cf0;
+}
+
+.container__content .list ul li a:active {
+  color: aquamarine;
+}
+
+.container__content .list ul li .dot {
+  padding: 0.5em;
+  color: #888888;
+}
+
+.container__content .list ul li .hour {
+  color: #888888;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 414px) {
+  * {
+    font-size: 12px;
+  }
+  .container {
+    width: 95%;
+  }
+  .container .hidden {
+    display: none;
+    visibility: collapse;
+  }
+}
+/*# sourceMappingURL=pic2.css.map */

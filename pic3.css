@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 50%;
+  height: auto;
+  font-size: 14px;
+  margin: 2em;
+}
+
+.container ul {
+  font-size: 1em;
+  color: #f96c34;
+  font-weight: bold;
+}
+
+.container ul li {
+  padding-bottom: 1em;
+}
+
+.container ul li a {
+  color: #44495d;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.container ul li a:hover {
+  color: #e21cf0;
+}
+
+.container ul li a:active {
+  color: aquamarine;
+}
+
+.container ul li span {
+  margin-left: 0.5em;
+  color: #d5d5d5;
+  cursor: pointer;
+}
+
+.container ul li span:hover {
+  color: #e21cf0;
+}
+
+@media screen and (max-width: 414px) {
+  .container {
+    font-size: 12px;
+    width: 95%;
+  }
+}
+/*# sourceMappingURL=pic3.css.map */

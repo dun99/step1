@@ -1,0 +1,108 @@
+@import 'style.scss';
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.container {
+    margin: 1em;
+    width: 60%;
+    height: 400px;
+    &__image {
+        img {
+            float: left;
+            width: 33%;
+        }
+    }
+    &__content {
+        float: left;
+        width: 67%;
+        .header {
+            padding-left: 1em;
+            padding-bottom: 0.8em;
+            a {
+                @include CSSFont(#333333, 1.5em, 700);
+                text-decoration: none;
+                &:hover {
+                    color: #e21cf0;
+                }
+                &:active {
+                    color: aquamarine;
+                }
+            }
+        }
+        .sport_hour {
+            padding-left: 1em;
+            padding-bottom: 0.8em;
+            .sport,
+            .sub {
+                @include CSSFont(#41455d, 1.3em, 600);
+            }
+            .hour {
+                @include CSSFont(#777777, 1.3em, 400);
+            }
+        }
+        .content {
+            padding-left: 1em;
+            padding-bottom: 0.8em;
+            @include CSSFont(#4d4d4d, 1.2em, 400);
+        }
+        hr {
+            margin-left: 1em;
+            border: none;
+            border-bottom: dotted 0.5px;
+            height: 1px;
+            color: #777777;
+        }
+        .bonus {
+            padding-top: 0.5em;
+            a {
+                margin-left: 1em;
+                @include CSSFont(#9e9e9e, 1em, 400);
+                text-decoration: none;
+            }
+        }
+        .list {
+            padding-top: 0.3em;
+            padding-left: 1em;
+            ul {
+                list-style-type: square;
+                color: #fc5f3d;
+                li {
+                    padding-bottom: 1em;
+                    a {
+                        @include CSSFont(#41455d, 1.2em, 600);
+                        text-decoration: none;
+                        &:hover {
+                            color: #e21cf0;
+                        }
+                        &:active {
+                            color: aquamarine;
+                        }
+                    }
+                    .dot {
+                        padding: 0.5em;
+                        color: #888888;
+                    }
+                    .hour {
+                        @include CSSFont(#888888, 1em, 400);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:414px) {
+    * {
+        font-size: 12px;
+    }
+    .container {
+        width: 95%;
+        .hidden {
+            display: none;
+            visibility: collapse;
+        }
+    }
+}

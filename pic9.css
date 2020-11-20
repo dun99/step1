@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 2em;
+  border: none;
+  width: 50%;
+}
+
+.container .content {
+  border: none;
+  border-bottom: dotted 0.1em #2d2d2d;
+  padding-bottom: 60px;
+  width: 100%;
+  clear: both;
+}
+
+.container .content .hour {
+  width: 12%;
+  float: left;
+  border: none;
+  border-right: dotted 0.1em #2d2d2d;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  color: #fc6b2f;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.container .content .title {
+  width: 75%;
+  float: left;
+  color: #2d2d2d;
+  font-size: 1.5em;
+  font-weight: 600;
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 414px) {
+  .container {
+    font-size: 14px;
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=pic9.css.map */

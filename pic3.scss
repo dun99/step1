@@ -1,0 +1,45 @@
+@import 'style.scss';
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 50%;
+    height: auto;
+    font-size: 14px;
+    margin: 2em;
+    ul {
+        font-size: 1em;
+        color: #f96c34;
+        font-weight: bold;
+        li {
+            padding-bottom: 1em;
+            a {
+                @include CSSFont(#44495d, 1.2em, 400);
+                text-decoration: none;
+                &:hover {
+                    color: #e21cf0;
+                }
+                &:active {
+                    color: aquamarine;
+                }
+            }
+            span {
+                margin-left: 0.5em;
+                color: #d5d5d5;
+                cursor: pointer;
+                &:hover {
+                    color: #e21cf0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:414px) {
+    .container {
+        font-size: 12px;
+        width: 95%;
+    }
+}
